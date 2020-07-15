@@ -20,7 +20,7 @@ while not (localtime.tm_hour == int(sys.argv[4]) and localtime.tm_min == int(sys
            and localtime.tm_sec == int(sys.argv[6])):
     time.sleep(0.01)
     localtime = time.localtime()
-    print(".")
+    # print(".")
 
 print("Initiating..")
 
