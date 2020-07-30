@@ -92,8 +92,7 @@ else:  # 시간이 될 때까지 기다리다 실행
         browser.switch_to.alert.accept()
     except NoAlertPresentException:  # 이미 시작해서 알림창이 안 뜨기 때문에 에러를 던질 때 wait()하지 않고 바로 시작
         print("Already started, Initiating immediately")
-        # start_time = time.time()
-        start_time = wait(browser, hour, minute, second)
+        start_time = time.time()
     else:  # 시작 전일 때
         start_time = wait(browser, hour, minute, second)
 
